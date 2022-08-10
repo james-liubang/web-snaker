@@ -1,4 +1,15 @@
-# java -jar application-1.0-shaded.jar
+项目描述：
+通过启动Web snaker工具（命令行）搜索关键字爬取网站和关键字。
+
+项目本地运行：
+mvn clean package
+java -jar /target/application-1.0-shaded.jar
+
+Docker中运行：
+bash build.sh
+
+运行示例：
+
 输入要查询的URL(https://www.oracle.com/)
 
 输入要查询的关键字(Oracle Fusion)
