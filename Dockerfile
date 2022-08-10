@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:latest
+FROM openjdk:11-jre-slim
 RUN mkdir /opt/app
-COPY japp.jar /opt/app
-CMD ["java", "-jar", "/opt/app/japp.jar"]
+COPY /target/application-1.0-shaded.jar /opt/app/application-1.0-shaded.jar
+CMD ["java", "-jar", "/opt/app/application-1.0-shaded.jar"]
